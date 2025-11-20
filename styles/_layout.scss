@@ -1,0 +1,225 @@
+body {
+    background-color: $bodyColor;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('../img/banner.gif');
+    height: 340px;
+    background-size: auto;
+    background-position: center;
+    color: $colorWhite;
+
+    @include tablet {
+        height: 250px;
+    }
+    
+    @include mobile {
+        height: 300px;
+    }
+
+    @include desktop {
+        height: 250px;
+    }
+
+    &__profile {
+        img {
+            width: $imgWidth;
+            height: $imgHeight;
+            display: flex;
+            border-radius: 50%;
+            object-fit: cover;
+
+            @include mobile {
+                width: 100px;
+                height: 100px;
+            }
+        }
+    }
+
+    &__section {
+        font-family: $fontFamilyVideoGames;
+        font-size: 14px;
+        text-align: center;
+        padding: 10px;
+
+        .header__links {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+
+            @include tablet {
+                gap: 20px;
+                font-size: 12px;
+            }
+
+            @include mobile {
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+
+            a {
+                text-decoration: none;
+                color: $colorWhite;
+
+                &:hover {
+                    color: $colorGreen;
+                }
+            }
+        }
+    }
+}
+
+.main {
+    font-family: $fontFamilyMain;
+
+    &__section {
+        padding: 10px 10px;
+
+        @include tablet {
+            padding: 10px 15px;
+        }
+
+        h1, h6 {
+            margin-top: 10px;
+            text-align: center;
+            color: $colorRed;
+        }
+
+        h6 {
+            color: $colorWhite;
+        }
+
+        p {
+            margin-top: 10px;
+            text-align: center;
+            color: $colorWhite;
+            font-size: 18px;
+        }
+    }
+
+    &__second-section {
+        padding: 10px 10px;
+        h3 {
+            color: $colorRed;
+            text-align: center;
+        }
+
+        .accordion-item {
+            background-color: $colorAccordionItem;
+            border: 1px solid $colorGreen;
+            color: $colorWhite;
+            margin-bottom: 10px;
+
+        }
+
+        .accordion-button {
+            background-color: $colorButton;
+            color: $colorGreen;
+        }
+
+        .accordion-button:not(.collapsed) {
+            background-color: $colorButtonCollapsed;
+            color: $colorRed;
+            box-shadow: none;
+        }
+
+        .accordion-button:focus {
+            box-shadow: 0 0 0 0.25rem $colorButtonAccordionFocus;
+        }
+    }
+
+    &__third-section {
+        h3 {
+            color: $colorRed;
+            text-align: center;
+        }
+        
+        #project-card {
+            background-color: $colorCard;
+            color: $colorWhite;
+            border: 1px solid $colorRed;
+            transition: transform 0.3s ease-in-out;
+
+            .card-img-top {
+                height: $imgHeight;
+                object-fit: cover;
+
+                @include tablet {
+                    height: 150px;
+                }
+            }
+        }
+
+        #project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px $colorBoxShadowCard;
+        }
+
+        .card-title {
+            color: $colorBlue;
+            font-size: 1.1rem;
+        }
+
+        .card-subtitle {
+            color: $colorCardSubtitle !important;
+        }
+
+        .btn-primary {
+            background-color: $colorRed;
+            border-color: $colorRed;
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            border-color: $colorBlue;
+            color: $colorBlue;
+        }
+
+        .btn-secondary:hover {
+            background-color: $colorBlue;
+            color: $colorBlack;
+        }
+    }
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../img/banner.gif');
+    height: 100px;
+    background-size: auto;
+    background-position: center;
+    color: $colorWhite;
+
+    &__links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        font-family: $fontFamilyVideoGames;
+        font-size: 14px;
+
+        @include tablet {
+            gap: 20px;
+        }
+
+        @include mobile {
+            flex-wrap: wrap;
+            gap: 10px 15px;
+        }
+
+        a {
+            text-decoration: none;
+            color: $colorWhite;
+
+            &:hover {
+                color: $colorGreen;
+            }
+        }
+    }
+}

@@ -1,0 +1,20 @@
+// Breakpoint para dispositivos pequeños
+@mixin mobile {
+    @media (min-width: 340px) {
+        @content;
+    }
+}
+
+// Breakpoint para tablets
+@mixin tablet {
+    @media (min-width: 760px) {
+        @content;
+    }
+}
+
+// Breakpoint para desktop
+@mixin desktop {
+    @media (min-width: 1200px) and (max-width: 1300px) {
+        @content;
+    }
+}

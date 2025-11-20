@@ -1,0 +1,206 @@
+body {
+  background-color: rgba(0, 0, 0, 0.953);
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../img/banner.gif");
+  height: 340px;
+  background-size: auto;
+  background-position: center;
+  color: rgb(255, 255, 255);
+}
+@media (min-width: 760px) {
+  .header {
+    height: 250px;
+  }
+}
+@media (min-width: 340px) {
+  .header {
+    height: 300px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1300px) {
+  .header {
+    height: 250px;
+  }
+}
+.header__profile img {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (min-width: 340px) {
+  .header__profile img {
+    width: 100px;
+    height: 100px;
+  }
+}
+.header__section {
+  font-family: "Press Start 2P", sans-serif;
+  font-size: 14px;
+  text-align: center;
+  padding: 10px;
+}
+.header__section .header__links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+@media (min-width: 760px) {
+  .header__section .header__links {
+    gap: 20px;
+    font-size: 12px;
+  }
+}
+@media (min-width: 340px) {
+  .header__section .header__links {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
+.header__section .header__links a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+.header__section .header__links a:hover {
+  color: rgb(12, 183, 12);
+}
+
+.main {
+  font-family: "Tourney", sans-serif;
+}
+.main__section {
+  padding: 10px 10px;
+}
+@media (min-width: 760px) {
+  .main__section {
+    padding: 10px 15px;
+  }
+}
+.main__section h1, .main__section h6 {
+  margin-top: 10px;
+  text-align: center;
+  color: rgb(255, 0, 0);
+}
+.main__section h6 {
+  color: rgb(255, 255, 255);
+}
+.main__section p {
+  margin-top: 10px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+}
+.main__second-section {
+  padding: 10px 10px;
+}
+.main__second-section h3 {
+  color: rgb(255, 0, 0);
+  text-align: center;
+}
+.main__second-section .accordion-item {
+  background-color: rgb(25, 25, 25);
+  border: 1px solid rgb(12, 183, 12);
+  color: rgb(255, 255, 255);
+  margin-bottom: 10px;
+}
+.main__second-section .accordion-button {
+  background-color: rgb(35, 35, 35);
+  color: rgb(12, 183, 12);
+}
+.main__second-section .accordion-button:not(.collapsed) {
+  background-color: rgb(40, 40, 40);
+  color: rgb(255, 0, 0);
+  box-shadow: none;
+}
+.main__second-section .accordion-button:focus {
+  box-shadow: 0 0 0 0.25rem rgba(0, 255, 255, 0.84);
+}
+.main__third-section h3 {
+  color: rgb(255, 0, 0);
+  text-align: center;
+}
+.main__third-section #project-card {
+  background-color: rgb(30, 30, 30);
+  color: rgb(255, 255, 255);
+  border: 1px solid rgb(255, 0, 0);
+  transition: transform 0.3s ease-in-out;
+}
+.main__third-section #project-card .card-img-top {
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (min-width: 760px) {
+  .main__third-section #project-card .card-img-top {
+    height: 150px;
+  }
+}
+.main__third-section #project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 255, 255, 0.4);
+}
+.main__third-section .card-title {
+  color: #00ffff;
+  font-size: 1.1rem;
+}
+.main__third-section .card-subtitle {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+.main__third-section .btn-primary {
+  background-color: rgb(255, 0, 0);
+  border-color: rgb(255, 0, 0);
+}
+.main__third-section .btn-secondary {
+  background-color: transparent;
+  border-color: #00ffff;
+  color: #00ffff;
+}
+.main__third-section .btn-secondary:hover {
+  background-color: #00ffff;
+  color: #000000;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../img/banner.gif");
+  height: 100px;
+  background-size: auto;
+  background-position: center;
+  color: rgb(255, 255, 255);
+}
+.footer__links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  font-family: "Press Start 2P", sans-serif;
+  font-size: 14px;
+}
+@media (min-width: 760px) {
+  .footer__links {
+    gap: 20px;
+  }
+}
+@media (min-width: 340px) {
+  .footer__links {
+    flex-wrap: wrap;
+    gap: 10px 15px;
+  }
+}
+.footer__links a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+.footer__links a:hover {
+  color: rgb(12, 183, 12);
+}/*# sourceMappingURL=main.css.map */

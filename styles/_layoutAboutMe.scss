@@ -1,0 +1,205 @@
+body {
+    background-color: $bodyColor;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../img/banner.gif');
+    height: 100px;
+    background-size: auto;
+    background-position: center;
+
+    @include tablet {
+        height: 70px;
+    }
+    
+    @include mobile {
+        height: 70px;
+    }
+
+    @include desktop {
+        height: 250px;
+    }
+
+    &__section {
+        font-family: $fontFamilyVideoGames;
+        font-size: 14px;
+        text-align: center;
+
+        @include tablet {
+            font-size: 12px;
+        }
+        
+        .header-links {            
+            a {
+                text-decoration: none;
+                color: $colorWhite;
+
+                &:hover {
+                    color: $colorGreen;
+                }
+            }
+        }
+    }
+}
+
+.main {
+    font-family: $fontFamilyMain;
+
+    &__section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h1 {
+            margin-top: 10px;
+            text-align: center;
+            color: $colorRed;
+        }
+
+        .card {
+            width: 50%;
+            border: 1px solid $colorGreen;
+            background-color: $colorBlack;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: transform 0.3s ease-in-out;
+
+            @include tablet {
+                width: 85%;
+            }
+
+            @include mobile {
+                width: 95%;
+            }
+
+            &:hover {
+                transform: translateY(-10px);
+                box-shadow: 0 10px 20px $colorBoxShadowHover;
+            }
+
+            .card-img-top {
+                width: 250px;
+                height: 250px;
+                object-fit: cover;
+
+                @include mobile {
+                    width: 150px;
+                    height: 150px;
+                }
+            }
+
+            .card-body {
+                background-color: $colorBlack;
+                .card-title {
+                    color: $colorWhite;
+                    text-align: center;
+                    text-decoration: underline;
+                }
+                .card-text {
+                    color: $colorWhite;
+                    text-align: justify;
+                }
+            }
+        }
+    }
+
+    &__second-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h1 {
+            margin-top: 20px;
+            text-align: center;
+            color: $colorRed;
+        }
+
+        .card {
+            width: 50%;
+            border: 1px solid $colorBlue;
+            background-color: $colorBlack;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: transform 0.3s ease-in-out;
+
+            @include tablet {
+                width: 85%;
+            }
+
+            @include mobile {
+                width: 95%;
+            }
+
+            &:hover {
+                transform: translateY(-10px);
+                box-shadow: 0 10px 20px $colorHoverCard;
+            }
+
+            .card-body {
+                background-color: $colorBlack; 
+
+                .accordion-item {
+                    background-color: $colorAccordionItem;
+                    border: 1px solid $colorGreen;
+                    color: $colorWhite;
+                    margin-bottom: 10px;
+                }
+
+                .accordion-button {
+                    background-color: $colorButton;
+                    color: $colorGreen;
+                }
+
+                .accordion-button:not(.collapsed) {
+                    background-color: $colorButtonCollapsed;
+                    color: $colorRed;
+                    box-shadow: none;
+                }
+
+                .accordion-button:focus {
+                    box-shadow: 0 0 0 0.25rem $colorButtonAccordionFocus;
+                }
+            }
+        }
+
+    }
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../img/banner.gif');
+    height: 100px;
+    background-size: auto;
+    background-position: center;
+    color: $colorWhite;
+
+    &__links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        font-family: $fontFamilyVideoGames;
+        font-size: 14px;
+
+        @include mobile {
+            flex-wrap: wrap;
+            gap: 10px 15px;
+        }
+
+        a {
+            text-decoration: none;
+            color: $colorWhite;
+
+            &:hover {
+                color: $colorGreen;
+            }
+        }
+    }
+}

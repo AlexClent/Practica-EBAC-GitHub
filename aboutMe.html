@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Press+Start+2P&family=Tourney:ital,wght@0,100..900;1,100..900&family=VT323&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./styles/mainAboutMe.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__section">
+            <div class="header-links">
+                <a href="index.html">Home</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="main__section">
+            <h1>Sobre Mí</h1>
+            <div class="card">
+                <img src="./img/foto perfil.jpg" class="card-img-top" alt="Foto de perfil">
+                <div class="card-body">
+                    <h5 class="card-title">Alexis Hernández Fragoso</h5>
+                    <p class="card-text">
+                        Egresado de la Ingeniería en Sistemas Computacionales con sólidos conocimientos en programación, gestión de bases de datos y redes.
+                        Apasionado por la innovación tecnológica y el aprendizaje continuo. Habilidad para resolver problemas de manera eficiente y trabajar en
+                        equipo. Comprometido con la excelencia y el crecimiento profesional.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="main__second-section">
+            <h1>Competencias</h1>
+            <div class="card">
+                <div class="card-body">
+                    
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                    1. Lenguajes de programación
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <p>Experiencia en <code>Python</code> y <code>Java</code></p>
+                                    <p>Conocimientos básicos en Java Script</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                    2. Desarrollo web
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <p>Conocimiento en <code>HTML</code> y <code>CSS</code></p>
+                                    <p>Experiencia en la creación de microservicios y aplicaciones web con <code>Spring Boot</code></p>
+                                    <p>Uso de patrón de diseño MVC</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                    3. Base de datos
+                                </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <p>Diseño y gestión de bases de datos relacionales con <code>MySQL</code> y <code>SQL Server</code></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                                    4. Sistemas Operativos
+                                </button>
+                            </h2>
+                            <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <p>Experiencia en entornos de desarrollo y administración básica de sistemas con <code>Linux</code></p>
+                                    <p>Virtualización con <code>VMware</code> y <code>VirtualBox</code></p>
+                                </div>
+                            </div>
+                        </div>
+                            <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                                    5. Herramientas de control de versiones
+                                </button>
+                            </h2>
+                            <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <p>Uso de <code>Git</code> y <code>GitHub</code> para la gestión de código en proyectos colaborativos</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <nav class="footer__links">
+            <a href="index.html">Home</a>
+            <a href="">CV</a>
+            <a href="tel:5581086345">Contacto</a>
+            <a href="mailto:alexis.hernandezf01@hotmail.com">Email</a>
+        </nav>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
