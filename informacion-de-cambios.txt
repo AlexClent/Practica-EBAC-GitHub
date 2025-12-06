@@ -1,0 +1,5 @@
+Información de los cambios generales en la rama audio dentro del proyecto
+1. Crear carpeta recursos
+2. Agregar los archivos de audio .m4a y .mp4
+3. Crear el archivo notas.txt
+4. Crear el archivo informacion-de-cambios.txt
